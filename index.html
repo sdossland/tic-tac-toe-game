@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="logic.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Tic Tac Toe Game</h1>
+    <div class="row buttonHolder">
+        <button type="button" class="btn btn-default" id="startBtn">Start Game</button>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close">Close x</span>
+            <p>Welcome to Tic Tac Toe! Do you want to be X or O?</p>
+            <button type="button" class="btn btn-default" id="xPlayer">X</button>
+            <button type="button" class="btn btn-default" id="oPlayer">O</button>
+        </div>
+    </div>
+    <div class="row" id="message"></div>
+    <table class="board">
+        <tr id="topRow">
+            <td class="square borderVertical borderHorizontal" id="s1"><!--<hr id="s1s" class="s1ss">--></td>
+            <td class="square borderVertical borderHorizontal" id="s2"></td>
+            <td class="square borderHorizontal" id="s3"></td>
+        </tr>
+        <tr id="middleRow">
+            <td class="square borderVertical borderHorizontal" id="s4"></td>
+            <td class="square borderVertical borderHorizontal" id="s5"></td>
+            <td class="square borderHorizontal" id="s6"></td>
+        </tr>
+        <tr id="bottomRow">
+            <td class="square borderVertical" id="s7"></td>
+            <td class="square borderVertical" id="s8"></td>
+            <td class="square" id="s9"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
